@@ -1,69 +1,70 @@
 export default {
   items: [
     {
-      name: 'Dashboard',
+      name: '가맹점 관리',
       url: '/dashboard',
       icon: 'icon-speedometer',
       badge: {
         variant: 'info',
-        text: 'NEW'
-      }
+        text: 'NEW',
+      },
     },
     {
       title: true,
-      name: 'UI elements',
-      wrapper: {            // optional wrapper object
-        element: "span",      // required valid HTML5 element tag
-        attributes: {}        // optional valid JS object with JS API naming ex: { className: "my-class", style: { fontFamily: "Verdana" }, id: "my-id"}
+      name: '분류',
+      wrapper: {
+        // optional wrapper object
+        element: 'span', // required valid HTML5 element tag
+        attributes: {}, // optional valid JS object with JS API naming ex: { className: "my-class", style: { fontFamily: "Verdana" }, id: "my-id"}
       },
-      class: ""             // optional class names space delimited list for title item ex: "text-center"
+      class: '', // optional class names space delimited list for title item ex: "text-center"
     },
     {
-      name: 'Components',
+      name: '컴포넌트',
       url: '/components',
       icon: 'icon-puzzle',
       children: [
         {
           name: 'Buttons',
           url: '/components/buttons',
-          icon: 'icon-puzzle'
+          icon: 'icon-puzzle',
         },
         {
           name: 'Social Buttons',
           url: '/components/social-buttons',
-          icon: 'icon-puzzle'
+          icon: 'icon-puzzle',
         },
         {
           name: 'Cards',
           url: '/components/cards',
-          icon: 'icon-puzzle'
+          icon: 'icon-puzzle',
         },
         {
           name: 'Forms',
           url: '/components/forms',
-          icon: 'icon-puzzle'
+          icon: 'icon-puzzle',
         },
         {
           name: 'Modals',
           url: '/components/modals',
-          icon: 'icon-puzzle'
+          icon: 'icon-puzzle',
         },
         {
           name: 'Switches',
           url: '/components/switches',
-          icon: 'icon-puzzle'
+          icon: 'icon-puzzle',
         },
         {
           name: 'Tables',
           url: '/components/tables',
-          icon: 'icon-puzzle'
+          icon: 'icon-puzzle',
         },
         {
           name: 'Tabs',
           url: '/components/tabs',
-          icon: 'icon-puzzle'
-        }
-      ]
+          icon: 'icon-puzzle',
+        },
+      ],
     },
     {
       name: 'Icons',
@@ -76,15 +77,15 @@ export default {
           icon: 'icon-star',
           badge: {
             variant: 'secondary',
-            text: '4.7'
-          }
+            text: '4.7',
+          },
         },
         {
           name: 'Simple Line Icons',
           url: '/icons/simple-line-icons',
-          icon: 'icon-star'
-        }
-      ]
+          icon: 'icon-star',
+        },
+      ],
     },
     {
       name: 'Widgets',
@@ -92,20 +93,20 @@ export default {
       icon: 'icon-calculator',
       badge: {
         variant: 'info',
-        text: 'NEW'
-      }
+        text: 'NEW',
+      },
     },
     {
       name: 'Charts',
       url: '/charts',
-      icon: 'icon-pie-chart'
+      icon: 'icon-pie-chart',
     },
     {
-      divider: true
+      divider: true,
     },
     {
       title: true,
-      name: 'Extras'
+      name: 'Extras',
     },
     {
       name: 'Pages',
@@ -115,24 +116,24 @@ export default {
         {
           name: 'Login',
           url: '/login',
-          icon: 'icon-star'
+          icon: 'icon-star',
         },
         {
           name: 'Register',
           url: '/register',
-          icon: 'icon-star'
+          icon: 'icon-star',
         },
         {
           name: 'Error 404',
           url: '/404',
-          icon: 'icon-star'
+          icon: 'icon-star',
         },
         {
           name: 'Error 500',
           url: '/500',
-          icon: 'icon-star'
-        }
-      ]
-    }
-  ]
+          icon: 'icon-star',
+        },
+      ],
+    },
+  ],
 };
