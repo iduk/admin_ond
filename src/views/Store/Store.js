@@ -13,6 +13,9 @@ import {
 } from 'reactstrap';
 
 class Store extends Component {
+  // 테이블의
+  // 페이지네이션 - 번호형태 양쪽 << < 1 2 3 4 5 ... 11 > >>
+
   render() {
     return (
       <div className='animated fadeIn'>
