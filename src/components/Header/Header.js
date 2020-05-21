@@ -10,6 +10,7 @@ import {
   NavbarToggler,
   NavbarBrand,
   DropdownToggle,
+  Container,
 } from 'reactstrap';
 
 class Header extends Component {
@@ -51,9 +52,11 @@ class Header extends Component {
   render() {
     return (
       <header className='app-header navbar'>
+        {/* 
         <NavbarToggler className='d-lg-none' onClick={this.mobileSidebarToggle}>
           &#9776;
-        </NavbarToggler>
+        </NavbarToggler> 
+        */}
         <NavbarBrand href='#'></NavbarBrand>
         {/* 
         <NavbarToggler
@@ -65,47 +68,70 @@ class Header extends Component {
         */}
 
         {/* Top Nav */}
-        <Nav className='mr-auto topNav' navbar>
-          <NavItem className='px-3'>
-            <NavLink href='#'>메인홈</NavLink>
-          </NavItem>
-          <NavItem className='px-3'>
-            <NavLink href='#'>가맹점 관리</NavLink>
-          </NavItem>
-          <NavItem className='px-3'>
-            <NavLink href='#'>리스트 관리</NavLink>
-          </NavItem>
-          <NavItem className='px-3'>
-            <NavLink href='#'>거래 관리</NavLink>
-          </NavItem>
-          <NavItem className='px-3'>
-            <NavLink href='#'>재고 관리</NavLink>
-          </NavItem>
-          <NavItem className='px-3'>
-            <NavLink href='#'>회원 관리</NavLink>
-          </NavItem>
-          <NavItem className='px-3'>
-            <NavLink href='#'>콘텐츠 관리</NavLink>
-          </NavItem>
-          <NavItem className='px-3'>
-            <NavLink href='#'>메시지/푸시관리</NavLink>
-          </NavItem>
-          <NavItem className='px-3'>
-            <NavLink href='#'>견적 요청 관리</NavLink>
-          </NavItem>
-          <NavItem className='px-3'>
-            <NavLink href='#'>예약/결제 관리</NavLink>
-          </NavItem>
-          <NavItem className='px-3'>
-            <NavLink href='#'>정산 관리</NavLink>
-          </NavItem>
-          <NavItem className='px-3'>
-            <NavLink href='#'>통계</NavLink>
-          </NavItem>
-          <NavItem className='px-3'>
-            <NavLink href='#'>관리자 권한</NavLink>
-          </NavItem>
-        </Nav>
+        <div className='navWrap'>
+          <Nav className='' navbar>
+            <NavItem>
+              <NavLink href='#' className='p-3 active'>
+                가맹점관리
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='#' className='p-3'>
+                리스트관리
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='#' className='p-3'>
+                거래관리
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='#' className='p-3'>
+                재고관리
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='#' className='p-3'>
+                회원관리
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='#' className='p-3'>
+                콘텐츠관리
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='#' className='p-3'>
+                메시지/푸시관리
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='#' className='p-3'>
+                견적요청관리
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='#' className='p-3'>
+                예약/결제관리
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='#' className='p-3'>
+                정산관리
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='#' className='p-3'>
+                통계
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='#' className='p-3'>
+                관리자권한
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </div>
       </header>
     );
   }

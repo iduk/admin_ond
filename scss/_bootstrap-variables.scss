@@ -16,7 +16,7 @@ $gray-800: #29363d;
 $gray-900: #151b1e;
 $black: #000 !default;
 
-$blue: #20a8d8;
+$blue: #4653a2;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #e83e8c !default;
@@ -113,8 +113,8 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-) !default;
+);
 $container-max-widths: (
   lg: 992px,
   xl: 1200px,
-) !default;
+);

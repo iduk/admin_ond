@@ -1,6 +1,7 @@
 .app-header.navbar {
   position: relative;
-  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
   height: $navbar-height;
   padding: 0;
   margin: 0;
@@ -20,6 +21,34 @@
     background-size: $navbar-brand-logo-size;
     @include borders($navbar-brand-border);
   }
+  // Nav Wrap
+  .navWrap {
+    position: relative;
+    width: calc(100% - 200px);
+    overflow-x: auto;
+    &::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 60px;
+      width: 10%;
+      background: -webkit-linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
+    }
+    // Nav
+    > .navbar-nav {
+      width: 1200px;
+    }
+  }
 
   .navbar-toggler {
     color: $navbar-color;
@@ -28,13 +57,15 @@
   .navbar-nav {
     flex-direction: row;
     align-items: center;
+    width: calc(100% - 200px);
+    overflow-x: auto;
   }
 
   .nav-item {
     position: relative;
-    min-width: 50px;
     margin: 0 !important;
     text-align: center;
+    font-weight: 500;
 
     button {
       margin: 0 auto;
@@ -99,5 +130,5 @@
 }
 
 .navbar-divider {
-  background-color: rgba(0,0,0,.075);
+  background-color: rgba(0, 0, 0, 0.075);
 }
